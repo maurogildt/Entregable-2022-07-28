@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>combis</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <h1 class="logo">turismo lores</h1>
+            <ul class="menuNav">
+                <li><a href="../index.html"><i class="fa-solid fa-house"></i> inicio</a></li>
+                <li><a href="./destinos.html"><i class="fa-solid fa-location-dot"></i> destinos</a></li>
+                <li><a href="./pasajes.html"><i class="fa-solid fa-suitcase-rolling"></i> pasajes</a></li>
+                <li class="active"><a href="./combis.html"><i class="fa-solid fa-bus-simple"></i> combis</a></li>
+                <li><a href="./contacto.html"><i class="fa-solid fa-envelope"></i> contacto</a></li>
+            </ul>
+            <span class="menuCel">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </nav>
+    </header>
+    
+    <main>
+        <div>
+            <h2>combis</h2>
+        </div>
+        <div class="elementosPasajes">
+            <section>
+                <form action="enviar_combi" class="formularios">
+                    <label for="origen_combi">origen:</label><br>
+                    <input class="formTam" type="text" name="origen_combi" id="origen_combi"><br><br>
+                    <label for="destino_combi">destino:</label><br>
+                    <input class="formTam" type="text" name="destino_combi" id="destino_combi"><br><br>
+                    <label for="destino_horario">horario:</label>
+                    <input type="time" name="destino_horario" id="destino_horario"><br><br>
+                    <label for="destino_ida">fecha:</label>
+                    <input type="date" name="destino_ida" id="destino_ida"><br><br>
+                    <label for="destino_regreso">regreso:</label>
+                    <input type="date" name="destino_regreso" id="destino_regreso"><br><br>
+                    <label for="destino_nombre">nombre:</label><br>
+                    <input class="formTam" type="text" name="destino_nombre" id="destino_nombre"><br><br>
+                    <label for="destino_telefono">telefono / celular:</label><br>
+                    <input class="formTam" type="text" name="destino_telefono" id="destino_telefono"><br><br>
+                    <label for="destino_comentarios">comentarios:</label><br>
+                    <textarea class="formTam" name="destino_comentarios" id="destino_comentarios" cols="30" rows="10"></textarea><br><br>
+                    <input class="formTam" type="button" value="Buscar">
+                </form>
+            </section>
+            <section>
+                <video src="../multimedia/Combi_video.mp4"controls autoplay width="640" height="430"></video><br><br>
+                <img src="../multimedia/Combi.jpg" alt="" width="640" height="430"><br><br>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <h6>turismo lores - copyright © 2022 - todos los derechos reservados</h6>
+        <ul>
+            <li class="redes"><i class="fa-brands fa-facebook"></i></li>
+            <li class="redes"><i class="fa-brands fa-instagram"></i></li>
+            <li class="redes"><i class="fa-brands fa-whatsapp"></i></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
