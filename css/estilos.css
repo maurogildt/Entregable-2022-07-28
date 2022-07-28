@@ -17,15 +17,16 @@
 }
 .logo {
     color: red;
-    font-size: 50px;
+    font-size: 35px;
     padding: 0 40px;
     font-family: 'Caveat', cursive;
     text-transform: capitalize;
+    white-space: nowrap;
 }
 .menuNav{
     display: flex;
     list-style: none;
-    margin-right: 20px;
+
 }
 .menuNav li{
     margin: 0 30px;
@@ -33,11 +34,12 @@
 .menuNav a{
     text-decoration: none;
     font-family: 'Arima', cursive;
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 13px;
-    display: block;
+    display: inline-block;
     color: black;
     text-transform: capitalize;
+    white-space: nowrap;
 }
 .menuNav li a:hover{
     color: gray;
@@ -258,4 +260,36 @@ footer{
     display: inline-block;
     list-style: none;
     margin-right: 20px;
+}
+
+@media screen and (min-width:1024px){
+    .logo{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .destinos img{
+        height: 150px;
+    }
+}
+@media screen and (max-width:769px){
+    .titulo{
+        font-size: 25px;
+    }
+    .destinos img{
+        height: 100px;
+        width: 90px;
+    }
+    .destinos h3{
+        font-size: 20px;
+    }
+    .destinos h5{
+        font-size: 16px;
+    }
+    .destinos h4{
+        font-size: 20px;
+    }
+    footer{
+        font-size: 20px;
+    }
 }
