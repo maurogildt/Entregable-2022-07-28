@@ -5,7 +5,7 @@
 }
 .menu{
     height: 75px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -172,7 +172,11 @@
 }
 .formularios input[type=date]{
     width: 50%;
-    margin-right: 5px;
+    margin: 0 5px;
+}
+.formularios input[type=time]{
+    width: 50%;
+    margin: 0 5px;
 }
 .formularios input[type=number]{
     width: 10%;
@@ -184,12 +188,56 @@
 .formularios input[type=button]{
     width: 100%;
 }
+.formularios textarea{
+    resize:none;
+    font-size: 16px;
+    background-color: #ff000067;
+    border-color: red;
+    border-radius: 10px;
+    color: #8f0000;
+    outline: none;
+    height: 200px;
+    width: 100%;
+}
 .formularios input:hover{
     border-color: #ff000070;
 }
 .formularios label{
     color: black;
     text-transform: capitalize;
+}
+.combis{
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 400px 400px;
+    grid-template-areas:
+    "titulo titulo"
+    "elementosCombis vidCombis"
+    "elementosCombis imgCombis";
+    justify-items: center;
+    row-gap: 30px;
+    margin-bottom: 100px;
+}
+.elementosCombis{
+    grid-area: elementosCombis;
+}
+.vidCombis{
+    grid-area: vidCombis;
+}
+.imgCombis{
+    grid-area: imgCombis;
+}
+.imgCombis img{
+    /* width: 100%; */
+    border-radius: 20px;
+    border: 2px solid rgba(255, 0, 0, 0.50);
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.vidCombis video{
+    border-radius: 10px;
+    border: ridge #ff000090;
+    object-fit: cover;
 }
 
 /* footer */

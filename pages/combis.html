@@ -26,35 +26,55 @@
     </header>
     
     <main>
-        <div>
-            <h2>combis</h2>
-        </div>
-        <div class="elementosPasajes">
-            <section>
-                <form action="enviar_combi" class="formularios">
-                    <label for="origen_combi">origen:</label><br>
-                    <input class="formTam" type="text" name="origen_combi" id="origen_combi"><br><br>
-                    <label for="destino_combi">destino:</label><br>
-                    <input class="formTam" type="text" name="destino_combi" id="destino_combi"><br><br>
-                    <label for="destino_horario">horario:</label>
-                    <input type="time" name="destino_horario" id="destino_horario"><br><br>
-                    <label for="destino_ida">fecha:</label>
-                    <input type="date" name="destino_ida" id="destino_ida"><br><br>
-                    <label for="destino_regreso">regreso:</label>
-                    <input type="date" name="destino_regreso" id="destino_regreso"><br><br>
-                    <label for="destino_nombre">nombre:</label><br>
-                    <input class="formTam" type="text" name="destino_nombre" id="destino_nombre"><br><br>
-                    <label for="destino_telefono">telefono / celular:</label><br>
-                    <input class="formTam" type="text" name="destino_telefono" id="destino_telefono"><br><br>
-                    <label for="destino_comentarios">comentarios:</label><br>
-                    <textarea class="formTam" name="destino_comentarios" id="destino_comentarios" cols="30" rows="10"></textarea><br><br>
-                    <input class="formTam" type="button" value="Buscar">
+        <div class="combis">
+            <h2 class="titulo">combis</h2>
+            <div class="elementosCombis">
+                <form action="enviar_combi">
+                    <div class="formularios">
+                        <label for="origen_combi">origen:</label>
+                        <input class="formTam" type="text" name="origen_combi" id="origen_combi">
+                    </div>
+                    <div class="formularios">
+                        <label for="destino_combi">destino:</label>
+                        <input class="formTam" type="text" name="destino_combi" id="destino_combi">
+                    </div>
+                    <div class="formularios">
+                        <label for="destino_horario">horario:</label>
+                        <input type="time" name="destino_horario" id="destino_horario">
+                    </div>
+                    <div class="formularios">
+                        <label for="destino_ida">fecha:</label>
+                        <input type="date" name="destino_ida" id="destino_ida">
+                    </div>
+                    <div class="formularios">
+                        <label for="destino_regreso">regreso:</label>
+                        <input type="date" name="destino_regreso" id="destino_regreso">
+                    </div>
+                    <div class="formularios">
+                        <label for="destino_nombre">nombre:</label>
+                        <input class="formTam" type="text" name="destino_nombre" id="destino_nombre">
+                    </div>
+                    <div class="formularios">
+                        <label for="destino_telefono">telefono / celular:</label>
+                        <input class="formTam" type="text" name="destino_telefono" id="destino_telefono">
+                    </div>
+                    <div class="formularios">
+                        <label for="destino_comentarios">comentarios:</label>
+                    </div>
+                    <div class="formularios">
+                        <textarea class="formTam" name="destino_comentarios" id="destino_comentarios" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="formularios">
+                        <input class="formTam" type="button" value="Buscar">
+                    </div>
                 </form>
-            </section>
-            <section>
-                <video src="../multimedia/Combi_video.mp4"controls autoplay width="640" height="430"></video><br><br>
-                <img src="../multimedia/Combi.jpg" alt="" width="640" height="430"><br><br>
-            </section>
+            </div>
+            <div class="vidCombis">
+                <video src="../multimedia/Combi_video.mp4"controls autoplay width="640" height="400"></video>
+            </div>
+            <div class="imgCombis">
+                <img src="../multimedia/Combi.jpg" alt="combis" width="640" height="400">
+            </div>
         </div>
     </main>
     
