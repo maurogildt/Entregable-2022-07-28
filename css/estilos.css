@@ -122,6 +122,76 @@
 .paquete3{
     grid-area: paquete3;
 }
+.pasajes{
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 400px;
+    grid-template-areas:
+    "titulo titulo"
+    "elementosPasajes imgPasajes";
+    justify-items: center;
+    row-gap: 30px;
+}
+.elementosPasajes{
+    grid-area: elementosPasajes;
+    width: 80%;
+}
+.imgPasajes{
+    grid-area: imgPasajes;
+}
+.imgPasajes img{
+    width: 100%;
+    margin: 20px 0px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 0, 0, 0.50);
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.formularios{
+    font-family: 'Arima', cursive;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+.formularios input{
+    background-color: #ff000067;
+    border-color: red;
+    border-radius: 10px;
+    color: #8f0000;
+    height: 30px;
+    text-align: center;
+    outline: none;
+}
+.formularios input::placeholder{
+    align-content: center;
+}
+.formularios input[type=text]{
+    width: 100%;
+    margin-left: 10px;
+}
+.formularios input[type=date]{
+    width: 50%;
+    margin-right: 5px;
+}
+.formularios input[type=number]{
+    width: 10%;
+    margin-right: 10px;
+}
+.formularios input[type=radio]{
+    margin: 0 10px;
+}
+.formularios input[type=button]{
+    width: 100%;
+}
+.formularios input:hover{
+    border-color: #ff000070;
+}
+.formularios label{
+    color: black;
+    text-transform: capitalize;
+}
+
 /* footer */
 footer{
     background-color: rgba(255, 0, 0, 0.5);
