@@ -292,6 +292,15 @@ footer{
     .destinos h4{
         font-size: 20px;
     }
+    .imgPasajes{
+        display: none;
+    }
+    .imgCombis{
+        display: none;
+    }
+    .vidCombis{
+        display: none;
+    }
     footer{
         font-size: 20px;
     }
