@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>contacto</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <h1 class="logo">turismo lores</h1>
+            <ul class="menuNav">
+                <li><a href="../index.html"><i class="fa-solid fa-house"></i> inicio</a></li>
+                <li><a href="./destinos.html"><i class="fa-solid fa-location-dot"></i> destinos</a></li>
+                <li><a href="./pasajes.html"><i class="fa-solid fa-suitcase-rolling"></i> pasajes</a></li>
+                <li><a href="./combis.html"><i class="fa-solid fa-bus-simple"></i> combis</a></li>
+                <li class="active"><a href="./contacto.html"><i class="fa-solid fa-envelope"></i> contacto</a></li>
+            </ul>
+            <ul class="menuCel">
+                <li><a href="../index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="./destinos.html"><i class="fa-solid fa-location-dot"></i></a></li>
+                <li><a href="./pasajes.html"><i class="fa-solid fa-suitcase-rolling"></i></a></li>
+                <li><a href="./combis.html"><i class="fa-solid fa-bus-simple"></i></a></li>
+                <li class="active"><a href="./contacto.html"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contacto">
+            <h2>contacto</h2>
+            <p>Señor cliente, recuerde que nuestra web es totalmente online y puede realizar todas sus reservas por la misma.<br>Toda la información sobre nuestros servicios la pueden encontrar aquí.</p>        
+            <div class="elementosContacto">
+                <form action="enviarContacto">
+                    <div class="formularios">
+                        <label for="contactoNombre">nombre y apellido:</label>
+                        <input class="formTam" type="text" name="contactoNombre" id="contactoNombre">
+                    </div>
+                    <div class="formularios">
+                        <label for="contactoMail">e-mail:</label>
+                        <input class="formTam" type="mail" name="contactoMail" id="contactoMail">
+                    </div>
+                    <div class="formularios">
+                        <label for="contactoTelefono">telefono / celular:</label>
+                        <input class="formTam" type="text" name="contactoTelefono" id="contactoTelefono">
+                    </div>
+                    <div class="formularios">
+                        <label for="contactoAsunto">asunto:</label>
+                        <input class="formTam" type="text" name="contactoAsunto" id="contactoAsunto">
+                    </div>
+                    <div class="formularios">
+                        <label for="contactoConsulta">consulta:</label>
+                        <textarea class="formTam" name="contactoConsulta" id="contactoConsulta" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="formularios">
+                        <input class="formTam" type="button" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <h6>turismo lores - copyright © 2022 - todos los derechos reservados</h6>
+        <ul>
+            <li class="redes"><i class="fa-brands fa-facebook"></i></li>
+            <li class="redes"><i class="fa-brands fa-instagram"></i></li>
+            <li class="redes"><i class="fa-brands fa-whatsapp"></i></li>
+        </ul>
+    </footer>
+    
+</body>
+</html>
