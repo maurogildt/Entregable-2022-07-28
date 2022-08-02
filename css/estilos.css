@@ -115,15 +115,23 @@ main{
     font-size: 40px;
     text-transform: capitalize;
     padding: 10px 0px;
+    animation-name: focus-in;
+    animation-duration: 1s;
 }
 .paquete1{
     grid-area: paquete1;
+    animation-name: flip-in-hor-bottom;
+    animation-duration: 2s;
 }
 .paquete2{
     grid-area: paquete2;
+    animation-name: flip-in-hor-bottom;
+    animation-duration: 2s;
 }
 .paquete3{
     grid-area: paquete3;
+    animation-name: flip-in-hor-bottom;
+    animation-duration: 2s;
 }
 .pasajes{
     padding: 100px;
@@ -135,6 +143,8 @@ main{
     "elementosPasajes imgPasajes";
     justify-items: center;
     row-gap: 30px;
+    animation-name: focus-in;
+    animation-duration: 1s;
 }
 .elementosPasajes{
     grid-area: elementosPasajes;
@@ -224,6 +234,8 @@ main{
     justify-items: center;
     row-gap: 30px;
     margin-bottom: 100px;
+    animation-name: focus-in ;
+    animation-duration: 1s;
 }
 .elementosCombis{
     grid-area: elementosCombis;
@@ -288,6 +300,31 @@ footer{
     display: inline-block;
     list-style: none;
     margin-right: 20px;
+}
+
+@keyframes focus-in {
+    0% {
+            -webkit-filter: blur(5px);
+                    filter: blur(5px);
+            opacity: 0;
+        }
+    100% {
+            -webkit-filter: blur(0px);
+                    filter: blur(0px);
+            opacity: 1;
+        }
+}
+@keyframes flip-in-hor-bottom {
+    0% {
+            -webkit-transform: rotateX(80deg);
+                    transform: rotateX(80deg);
+            opacity: 0;
+        }
+    100% {
+            -webkit-transform: rotateX(0);
+                    transform: rotateX(0);
+            opacity: 1;
+        }
 }
 
 @media screen and (min-width:1024px){
