@@ -234,7 +234,7 @@ main{
     justify-items: center;
     row-gap: 30px;
     margin-bottom: 100px;
-    animation-name: focus-in ;
+    animation-name: focus-in;
     animation-duration: 1s;
 }
 .elementosCombis{
